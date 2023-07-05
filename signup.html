@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600x ;700&family=Poppins:wght@200;300;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+  </head>
+  <body class="body">
+    
+    <nav class="navbar">
+      <div class="Navbar-logo">
+        <a href="#">
+          <img src="/img/logo.png" alt="" />
+        </a>
+      </div>
+      <div class="navbar-nav">
+        <div class="text-kiri">
+          <a href="index.html">Home</a>
+          
+          <a href="FQA.html">FAQ</a>
+        </div>
+        <div class="text-kanan">
+          <a href="signup.html">SIGN UP</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="login-page">
+      <div class="form">
+        <form>
+          <lottie-player
+            src="https://assets4.lottiefiles.com/datafiles/XRVoUu3IX4sGWtiC3MPpFnJvZNq7lVWDCa8LSqgS/profile.json"
+            background="transparent"
+            speed="1"
+            style="justify-content: center"
+            loop
+            autoplay
+          ></lottie-player>
+          <input type="text" placeholder="username" />
+          <input type="password" id="password" placeholder="password" />
+          <i class="fas fa-eye" onclick="show()"></i>
+          <br />
+          <br />
+          <button>LOGIN</button>
+          <p class="message"></p>
+        </form>
+
+        <form class="login-form">
+          <button type="button" onclick="window.location.href='signup.html'">SIGN UP</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="scrpt.js"></script>
+  </body>
+</html>
+</html>
