@@ -7,10 +7,11 @@
 
 body {
   background-color: #eff1f5;
+  overflow-x: hidden;
 }
 
 .navbar {
-  background-color: #eff1f5;
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   left: 0;
@@ -120,6 +121,7 @@ body {
 
 .home .home-content a:hover {
   background-color: #fff;
+  transform: scale(1.05);
   color: black;
 }
 
@@ -164,7 +166,10 @@ body {
   height: 27rem;
   margin: 1rem 3rem;
   display: grid;
-  grid-template-areas: "item-1 item-2 item-2" "item-1 item-3 item-4" "item-1 item-3 item-4";
+  grid-template-areas:
+    "item-1 item-2 item-2"
+    "item-1 item-3 item-4"
+    "item-1 item-3 item-4";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 1.2rem;
@@ -180,6 +185,7 @@ body {
   padding: 2.5rem 2rem 2rem 2rem;
   grid-area: item-1;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  /* border: 1px solid red; */
 }
 
 .menu .item-1 h2 {
@@ -716,16 +722,74 @@ footer {
 /* smartphone */
 @media (max-width: 450px) {
   html {
-    font-size: 50%;
+    font-size: 12px;
+    overflow-x: hidden;
   }
+
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "item-1" "item-2" "item-3" "item-4";
+    margin-bottom: 30rem;
+    width: 100px;
+    /* border: 2px solid black; */
+    /* overflow-x: hidden; */
+  }
+
+  .menu .item-1 {
+    grid-area: item-1;
+    width: 23rem;
+  }
+
+  .menu .item-2 {
+    grid-area: item-2;
+    width: 27rem;
+  }
+
+  .menu .item-3 {
+    grid-area: item-3;
+    width: 24rem;
+  }
+
+  .menu .item-4 {
+    grid-area: item-4;
+    width: 24rem;
+  }
+
   .menu .menu-content .about-menu {
     width: 15rem;
     height: 15rem;
   }
 
-  .about .bio-about .ktp .poto .foto {
-    width: 0.1rem;
-    height: 0.1rem;
+  .bio-about {
+    flex-direction: column;
+  }
+
+  .bio-about .img-bio {
     display: none;
+  }
+
+  .about .bio-about .ktp {
+    width: 100%;
+  }
+  .telp-icon {
+    display: none;
+  }
+
+  .contact .content-contact .link {
+    /* border: 1px solid black; */
+    width: 25rem;
+    /* justify-content: flex-start; */
+  }
+  .contact .content-contact .link a {
+    width: 25rem;
+  }
+  .project .content-project {
+    display: grid;
+    grid-template-areas: "abi" "ars" "kosong" "kosong1";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 3rem;
   }
 }
