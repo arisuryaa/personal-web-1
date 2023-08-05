@@ -659,7 +659,7 @@ footer {
 }
 .form button:hover,
 .form button:focus {
-  background: #148f77;
+  background: #00aaf5;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transform: translateY(-4px);
 }
@@ -729,8 +729,8 @@ footer {
   .menu {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "item-1" "item-2" "item-3" "item-4";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "item-1" "item-3" "item-4";
     margin-bottom: 30rem;
     width: 100px;
     /* border: 2px solid black; */
@@ -790,6 +790,9 @@ footer {
     grid-template-areas: "abi" "ars" "kosong" "kosong1";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    margin: 3rem;
+  }
+  .project .content-project img {
+    width: 20rem;
+    height: 20rem;
   }
 }
